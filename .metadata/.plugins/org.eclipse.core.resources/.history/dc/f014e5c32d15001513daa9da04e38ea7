@@ -1,0 +1,62 @@
+package morsecode;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MorseFileDecoder 
+{
+
+
+	public static void main(String[] args) 
+	{
+
+		try 
+		{
+			Scanner fileScanner = new Scanner(new File(args[1]));
+			while(fileScanner.hasNextLine())
+			{
+				String inputLine = fileScanner.nextLine();
+				System.out.println(MorseDecoder.decode(inputLine));
+			}
+			fileScanner.close();
+		} 
+		catch (FileNotFoundException e) 
+		{
+			try
+			{
+				Scanner defaultFileScanner = new Scanner(new File("words.txt"));
+				while(defaultFileScanner.hasNextLine())
+				{
+					String inputLine = defaultFileScanner.nextLine();
+					System.out.println(MorseDecoder.decode(inputLine));
+				}
+				defaultFileScanner.close();
+			}
+			catch (FileNotFoundException f) 
+			{
+				System.err.println("Sepcified file not found, and default file does not exist.");
+			}
+		}
+		catch (ArrayIndexOutOfBoundsException a)
+		{
+			try
+			{
+				Scanner defaultFileScanner = new Scanner(new File("words.txt"));
+				while(defaultFileScanner.hasNextLine())
+				{
+					String inputLine = defaultFileScanner.nextLine();
+					System.out.println(MorseDecoder.decode(inputLine));
+				}
+				defaultFileScanner.close();
+			}
+			catch (FileNotFoundException f) 
+			{
+				System.err.println("Default file does not exist.");
+			}
+		}
+		//System.out.println(MorseDecoder.decode(".-|-...|-.-.|-..|.|..-.|--.|....|..|.---|-.-|.-..|--|-.|---|.--.|--.-|.-.|...|-|..-|...-|.--|-..-|-.--|--.."));  //Test for all characters
+
+	}
+
+}

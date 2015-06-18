@@ -1,0 +1,19 @@
+package morsecode;
+
+
+public class MorseTest 
+{
+
+
+	public static void main(String[] args) 
+	{
+		MorseFileDecoder mfd;
+		if(args.length > 0)
+		{
+			mfd = new MorseFileDecoder(args[0]);
+			System.out.println(mfd.decode());
+		}
+
+	}
+
+}

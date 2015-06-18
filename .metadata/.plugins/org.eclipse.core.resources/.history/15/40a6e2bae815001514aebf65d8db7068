@@ -1,0 +1,51 @@
+package morsecode;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MorseFileDecoder 
+{
+	public File f;
+
+	public MorseFileDecoder(String fin)
+	{
+		f = new File(fin);
+	}
+	
+	public String decode() 
+	{
+		String result = "";
+		try 
+		{
+			Scanner fileScanner = new Scanner(f);
+			while(fileScanner.hasNextLine())
+			{
+				String inputLine = fileScanner.nextLine();
+				result += MorseDecoder.decode(inputLine);
+			}
+			fileScanner.close();
+		} 
+		catch (FileNotFoundException fe) 
+		{
+			try
+			{
+				System.err.println("Specified file not found, attempting to use default file...");
+				Scanner defaultFileScanner = new Scanner(new File("words.txt"));
+				while(defaultFileScanner.hasNextLine())
+				{
+					String inputLine = defaultFileScanner.nextLine();
+					result += MorseDecoder.decode(inputLine);
+				}
+				defaultFileScanner.close();
+			}
+			catch (FileNotFoundException fe2) 
+			{
+				System.err.println("Sepcified file not found, and default file does not exist.");
+			}
+		}
+		
+		return result;
+	}
+
+}
