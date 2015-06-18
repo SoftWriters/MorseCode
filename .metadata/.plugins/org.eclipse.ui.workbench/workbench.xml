@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="667" maximized="true" width="1018" x="442" y="34">
 <fastViewData fastViewLocation="1024"/>
@@ -12,7 +12,7 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="316" y="30"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -30,17 +30,22 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MorseFileDecoder.java" partName="MorseFileDecoder.java" path="/home/kensandala/Documents/MorseCode/MorseCode/MorseCodeProject/src/morsecode/MorseFileDecoder.java" title="MorseFileDecoder.java" tooltip="MorseCodeProject/src/morsecode/MorseFileDecoder.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MorseCodeProject/src/morsecode/MorseFileDecoder.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="470" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="588" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MorseDecoder.java" partName="MorseDecoder.java" path="/home/kensandala/Documents/MorseCode/MorseCode/MorseCodeProject/src/morsecode/MorseDecoder.java" title="MorseDecoder.java" tooltip="MorseCodeProject/src/morsecode/MorseDecoder.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MorseCodeProject/src/morsecode/MorseDecoder.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="530" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="263" selectionTopPixel="785"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MorseTest.java" partName="MorseTest.java" path="/home/kensandala/Documents/MorseCode/MorseCode/MorseCodeProject/src/morsecode/MorseTest.java" title="MorseTest.java" tooltip="MorseCodeProject/src/morsecode/MorseTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MorseCodeProject/src/morsecode/MorseTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="517" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -152,151 +157,158 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MorseCodeProject/src/morsecode/MorseFileDecoder.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MorseCodeProject/src/morsecode/MorseTest.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MorseCodeProject/src/morsecode/MorseDecoder.java"/>
 </editors>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="303" y="0"/>
 </item>
 <item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="892" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1182" y="39"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="892" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1182" y="39"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="892" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1182" y="39"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1126" y="56"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1182" y="0"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1175" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="759" y="0"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1126" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1167" y="0"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1131" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1167" y="0"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1131" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="1182" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="759" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="828" y="0"/>
-</item>
-<item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1131" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="828" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="760" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="755" y="36"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="652" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="600" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="531" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="577" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="531" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="375" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="382" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="434" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="749" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="531" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
 <position/>
 </item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="497" y="0"/>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="802" y="0"/>
 </item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="349" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="435" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="456" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="435" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="456" y="0"/>
-</item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="360" y="0"/>
 </item>
 <item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="1131" y="0"/>
+<position/>
 </item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="907" y="0"/>
 </item>
 <item historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="470" y="0"/>
+<position/>
 </item>
-<item historyLabel="MorseDecoder.java" index="1">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="MorseTest.java" index="1">
+<position/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="835" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="366" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="206" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="681" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="206" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="366" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="146" y="34"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="292" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="292" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="900" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="902" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="734" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="902" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="644" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="644" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="902" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="464" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="459" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="644" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="644" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="MorseFileDecoder.java" index="0">
+<position info="not_deleted" x="588" y="0"/>
+</item>
+<item historyLabel="MorseTest.java" index="1">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="MorseDecoder.java" index="2">
+<position info="not_deleted" x="263" y="0"/>
 </item>
 <item active="true" historyLabel="MorseFileDecoder.java" index="0">
-<position info="not_deleted" x="470" y="0"/>
+<position info="not_deleted" x="588" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -315,6 +327,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MorseTest.java" tooltip="MorseCodeProject/src/morsecode/MorseTest.java">
+<persistable path="/MorseCodeProject/src/morsecode/MorseTest.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MorseDecoder.java" tooltip="MorseCodeProject/src/morsecode/MorseDecoder.java">
 <persistable path="/MorseCodeProject/src/morsecode/MorseDecoder.java"/>
 </file>
