@@ -18,7 +18,7 @@ Sample Input
 ------------
 -..|---|--.
 
-….|.|.-..|.-..|---||.--|---|.-.|.-..|-..
+....|.|.-..|.-..|---||.--|---|.-.|.-..|-..
 
 Sample Output
 -------------
@@ -33,3 +33,14 @@ Please use whatever technology and techniques you feel are applicable to solve t
 Please fork this repository. When you have completed your solution, please issue a pull request to notify us that you are ready.
 
 Have fun.
+
+Follow Up
+---------
+To run this program:
+
+ - Enter `make`, then `./main`, and manually provide an input file
+ - Enter `make`, then `./main in.txt` to use the provided input file
+ - Enter `make`, then `./main in.txt out.txt` to use the provided input and output files
+ - Enter `make run` to run the program and manually provide an input file
+ - Enter `make runIn` to run the program and use `in.txt` as the input file
+ - Enter `make runInOut` to run the program and use `in.txt` as the input file and `out.txt` as the output file

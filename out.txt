@@ -1,0 +1,12 @@
+dog
+hello world
+softwriters
+truefit
+<empty line>
+         
+         spaces at front
+spaces at back         
+large       gap
+bad inpu<invalid character, skipping rest of line>
+bad in<invalid character, skipping rest of line>
+thank you and goodbye
