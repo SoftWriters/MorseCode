@@ -64,9 +64,8 @@ namespace MorseCode {
 			var codes = line.Split(new[] { separator }, StringSplitOptions.None);
 			return String.Concat(codes.Select(Morse.DecodeCharacter));
 		}
-
-		//Note: Only supports lowercase characters
-		public static string EncodeCharacter(char character) => MorseInverseMapping[character];
+		
+		public static string EncodeCharacter(char character) => MorseInverseMapping[Char.ToLowerInvariant(character)];
 		public static char DecodeCharacter(string code) => MorseMapping[code];
 	}
 }
