@@ -1,0 +1,7 @@
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\bin\Debug\MorseCode.Test.dll
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\bin\Debug\MorseCode.Test.pdb
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\obj\Debug\MorseCode.Test.csprojResolveAssemblyReference.cache
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\obj\Debug\MorseCode.Test.dll
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\obj\Debug\MorseCode.Test.pdb
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\bin\Debug\MorseCode.dll
+c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode.Test\bin\Debug\MorseCode.pdb

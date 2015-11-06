@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="01414778-1bb1-4fb0-ba30-5cffaa6c00bb" name="Justin@SOVEREIGN 2015-11-06 01:45:29" runUser="SOVEREIGN\Justin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7a23884f-373f-4554-a54b-ce3346408aa2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Justin_SOVEREIGN 2015-11-06 01_45_29">
+      <DeploymentItem filename="c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode\bin\Debug\MorseCode.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-11-06T01:45:29.6160693-05:00" queuing="2015-11-06T01:45:29.6430709-05:00" start="2015-11-06T01:45:29.6460711-05:00" finish="2015-11-06T01:45:29.8080803-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMorseCode" storage="c:\users\justin\documents\visual studio 2010\projects\softwritersmorsecode\morsecode.test\bin\debug\morsecode.test.dll" id="ab6b8c0c-30ec-2e9f-eac1-06aa322e8eec">
+      <Execution id="3e59cd6f-c2a1-470e-b291-0183d866f0d6" />
+      <TestMethod codeBase="c:/users/justin/documents/visual studio 2010/Projects/SoftWritersMorseCode/MorseCode.Test/bin/Debug/MorseCode.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MorseCode.Test.MorseCodeTest, MorseCode.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMorseCode" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ab6b8c0c-30ec-2e9f-eac1-06aa322e8eec" executionId="3e59cd6f-c2a1-470e-b291-0183d866f0d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3e59cd6f-c2a1-470e-b291-0183d866f0d6" testId="ab6b8c0c-30ec-2e9f-eac1-06aa322e8eec" testName="TestMorseCode" computerName="SOVEREIGN" duration="00:00:00.0128460" startTime="2015-11-06T01:45:29.6480712-05:00" endTime="2015-11-06T01:45:29.7970797-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e59cd6f-c2a1-470e-b291-0183d866f0d6">
+      <Output>
+        <StdOut>Error: An exception has occurred:Could not find file 'c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\TestResults\Justin_SOVEREIGN 2015-11-06 01_45_29\Out\MorseInput.txt'.</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
