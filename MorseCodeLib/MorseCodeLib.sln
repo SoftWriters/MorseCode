@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseCodeLib", "MorseCodeLib.csproj", "{00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseCodeTest", "..\MorseCodeTest\MorseCodeTest.csproj", "{3486F442-5440-4C9D-9839-E002D0E9449D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A} = {00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AE359F-B94F-49E8-AFC1-CDA2D0B26B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3486F442-5440-4C9D-9839-E002D0E9449D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3486F442-5440-4C9D-9839-E002D0E9449D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3486F442-5440-4C9D-9839-E002D0E9449D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3486F442-5440-4C9D-9839-E002D0E9449D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
