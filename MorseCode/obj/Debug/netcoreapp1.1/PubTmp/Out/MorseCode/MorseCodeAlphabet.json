@@ -1,0 +1,120 @@
+﻿[
+  {
+    "Letter": "a",
+    "Code": ".-"
+  },
+  {
+    "Letter": "b",
+    "Code": "-..."
+  },
+  {
+    "Letter": "c",
+    "Code": "-.-."
+  },
+  {
+    "Letter": "d",
+    "Code": "-.."
+  },
+  {
+    "Letter": "e",
+    "Code": "."
+  },
+  {
+    "Letter": "f",
+    "Code": "..-."
+  },
+  {
+    "Letter": "g",
+    "Code": "--."
+  },
+  {
+    "Letter": "h",
+    "Code": "...."
+  },
+  {
+    "Letter": "i",
+    "Code": ".."
+  },
+  {
+    "Letter": "j",
+    "Code": ".---"
+  },
+  {
+    "Letter": "k",
+    "Code": "-.-"
+  },
+  {
+    "Letter": "l",
+    "Code": ".-.."
+  },
+  {
+    "Letter": "m",
+    "Code": "--"
+  },
+  {
+    "Letter": "n",
+    "Code": "-."
+  },
+  {
+    "Letter": "o",
+    "Code": "---"
+  },
+  {
+    "Letter": "p",
+    "Code": ".--."
+  },
+  {
+    "Letter": "q",
+    "Code": "--.-"
+  },
+  {
+    "Letter": "r",
+    "Code": ".-."
+  },
+  {
+    "Letter": "s",
+    "Code": "..."
+  },
+  {
+    "Letter": "t",
+    "Code": "-"
+  },
+  {
+    "Letter": "u",
+    "Code": "..-"
+  },
+  {
+    "Letter": "v",
+    "Code": "...-"
+  },
+  {
+    "Letter": "w",
+    "Code": ".--"
+  },
+  {
+    "Letter": "x",
+    "Code": "-..-"
+  },
+  {
+    "Letter": "y",
+    "Code": "-.--"
+  },
+  {
+    "Letter": "z",
+    "Code": "--.."
+  },
+  {
+    "Letter": " ",
+    "Code": "||"
+  },
+  {
+    "Letter": "\r",
+    "Code": "\r"
+  },
+  {
+    "Letter": " ",
+    "Code": ""
+  }
+
+
+]

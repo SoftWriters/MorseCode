@@ -1,0 +1,28 @@
+@model List<MorseCode.MorseCodeLetter>
+
+@{
+    ViewData["Title"] = "View Alphabet";
+}
+
+<h2>View Alphabet</h2>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table table-bordered table-striped table-hover table-responsive">
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Letter) | @Html.DisplayFor(modelItem => item.Code)</td>
+    
+        </tr>
+        @*<tr>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>*@
+}
+    </tbody>
+</table>

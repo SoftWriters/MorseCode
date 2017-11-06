@@ -1,0 +1,11 @@
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\bin\Release\netcoreapp1.1\MorseCode.deps.json
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\bin\Release\netcoreapp1.1\MorseCode.runtimeconfig.json
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\bin\Release\netcoreapp1.1\MorseCode.runtimeconfig.dev.json
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\bin\Release\netcoreapp1.1\MorseCode.dll
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\bin\Release\netcoreapp1.1\MorseCode.pdb
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\obj\Release\netcoreapp1.1\MorseCode.csprojResolveAssemblyReference.cache
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\obj\Release\netcoreapp1.1\MorseCode.csproj.CoreCompileInputs.cache
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\obj\Release\netcoreapp1.1\MorseCode.AssemblyInfoInputs.cache
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\obj\Release\netcoreapp1.1\MorseCode.AssemblyInfo.cs
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\obj\Release\netcoreapp1.1\MorseCode.dll
+D:\Projects\Learning\CodeTest\MorseCode\MorseCode\MorseCode\obj\Release\netcoreapp1.1\MorseCode.pdb
