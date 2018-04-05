@@ -1,0 +1,9 @@
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\bin\Debug\MorseCodeTranslate.exe.config
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\bin\Debug\MorseCodeTranslate.exe
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\bin\Debug\MorseCodeTranslate.pdb
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\obj\Debug\MorseCodeTranslate.Properties.Resources.resources
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\obj\Debug\MorseCodeTranslate.csproj.GenerateResource.Cache
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\obj\Debug\MorseCodeTranslate.exe
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\obj\Debug\MorseCodeTranslate.pdb
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\obj\Debug\MorseCodeTranslate.csprojResolveAssemblyReference.cache
+c:\users\kmitc_000\documents\visual studio 2013\Projects\MorseCodeTranslate\MorseCodeTranslate\obj\Debug\MorseCodeTranslate.Form1.resources
