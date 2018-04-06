@@ -1,0 +1,19 @@
+\\PSBDFILESRVR.PSU-ERIE.BD.PSU.EDU\STUDENT\tzn5093\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.exe.config
+\\PSBDFILESRVR.PSU-ERIE.BD.PSU.EDU\STUDENT\tzn5093\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.csprojResolveAssemblyReference.cache
+\\PSBDFILESRVR.PSU-ERIE.BD.PSU.EDU\STUDENT\tzn5093\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.exe
+\\PSBDFILESRVR.PSU-ERIE.BD.PSU.EDU\STUDENT\tzn5093\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.pdb
+\\PSBDFILESRVR.PSU-ERIE.BD.PSU.EDU\STUDENT\tzn5093\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.exe
+\\PSBDFILESRVR.PSU-ERIE.BD.PSU.EDU\STUDENT\tzn5093\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.pdb
+P:\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.exe.config
+P:\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.exe
+P:\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.pdb
+P:\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.exe
+P:\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.pdb
+P:\Private\Documents\Visual Studio 2015\Projects\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.csprojResolveAssemblyReference.cache
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.exe.config
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.exe
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\bin\Debug\MorseCode_SoftWriters.pdb
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.csprojResolveAssemblyReference.cache
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.csproj.CoreCompileInputs.cache
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.exe
+C:\Users\Taylor\Downloads\MorseCode_SoftWriters\MorseCode_SoftWriters\obj\Debug\MorseCode_SoftWriters.pdb
