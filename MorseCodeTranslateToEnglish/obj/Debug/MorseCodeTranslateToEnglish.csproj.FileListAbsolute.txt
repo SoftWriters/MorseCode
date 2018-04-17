@@ -1,0 +1,7 @@
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\bin\Debug\MorseCodeTranslateToEnglish.exe.config
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\bin\Debug\MorseCodeTranslateToEnglish.exe
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\bin\Debug\MorseCodeTranslateToEnglish.pdb
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\obj\Debug\MorseCodeTranslateToEnglish.csprojResolveAssemblyReference.cache
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\obj\Debug\MorseCodeTranslateToEnglish.csproj.CoreCompileInputs.cache
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\obj\Debug\MorseCodeTranslateToEnglish.exe
+c:\users\todd\source\repos\MorseCodeTranslateToEnglish\MorseCodeTranslateToEnglish\obj\Debug\MorseCodeTranslateToEnglish.pdb
