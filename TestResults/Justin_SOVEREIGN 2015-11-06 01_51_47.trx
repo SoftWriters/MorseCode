@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c89f11b7-33cb-432d-9972-8096838de1dc" name="Justin@SOVEREIGN 2015-11-06 01:51:47" runUser="SOVEREIGN\Justin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7a23884f-373f-4554-a54b-ce3346408aa2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Justin_SOVEREIGN 2015-11-06 01_51_47">
+      <DeploymentItem filename="c:\users\justin\documents\visual studio 2010\Projects\SoftWritersMorseCode\MorseCode\bin\Debug\MorseCode.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-11-06T01:51:47.2466686-05:00" queuing="2015-11-06T01:51:47.5016832-05:00" start="2015-11-06T01:51:47.5446856-05:00" finish="2015-11-06T01:51:47.7426970-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMorseCode" storage="c:\users\justin\documents\visual studio 2010\projects\softwritersmorsecode\morsecode.test\bin\debug\morsecode.test.dll" id="ab6b8c0c-30ec-2e9f-eac1-06aa322e8eec">
+      <Execution id="5de70011-ff8b-4b63-989d-b4a4039cc893" />
+      <TestMethod codeBase="C:/Users/Justin/Documents/Visual Studio 2010/Projects/SoftWritersMorseCode/MorseCode.Test/bin/Debug/MorseCode.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MorseCode.Test.MorseCodeTest, MorseCode.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMorseCode" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ab6b8c0c-30ec-2e9f-eac1-06aa322e8eec" executionId="5de70011-ff8b-4b63-989d-b4a4039cc893" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5de70011-ff8b-4b63-989d-b4a4039cc893" testId="ab6b8c0c-30ec-2e9f-eac1-06aa322e8eec" testName="TestMorseCode" computerName="SOVEREIGN" duration="00:00:00.0140677" startTime="2015-11-06T01:51:47.5506860-05:00" endTime="2015-11-06T01:51:47.7276961-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5de70011-ff8b-4b63-989d-b4a4039cc893">
+      <Output>
+        <StdOut>Success!</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
