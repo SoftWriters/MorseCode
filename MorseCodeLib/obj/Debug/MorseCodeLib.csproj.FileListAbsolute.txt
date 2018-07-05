@@ -1,0 +1,10 @@
+C:\Users\Pat-Gamer\Source\Repos\MorseCodeLib\bin\Debug\MorseCodeLib.dll
+C:\Users\Pat-Gamer\Source\Repos\MorseCodeLib\bin\Debug\MorseCodeLib.pdb
+C:\Users\Pat-Gamer\Source\Repos\MorseCodeLib\obj\Debug\MorseCodeLib.csprojResolveAssemblyReference.cache
+C:\Users\Pat-Gamer\Source\Repos\MorseCodeLib\obj\Debug\MorseCodeLib.dll
+C:\Users\Pat-Gamer\Source\Repos\MorseCodeLib\obj\Debug\MorseCodeLib.pdb
+C:\Users\Pat-Gamer\Source\Repos\MorseCode\MorseCodeLib\bin\Debug\MorseCodeLib.dll
+C:\Users\Pat-Gamer\Source\Repos\MorseCode\MorseCodeLib\bin\Debug\MorseCodeLib.pdb
+C:\Users\Pat-Gamer\Source\Repos\MorseCode\MorseCodeLib\obj\Debug\MorseCodeLib.csprojResolveAssemblyReference.cache
+C:\Users\Pat-Gamer\Source\Repos\MorseCode\MorseCodeLib\obj\Debug\MorseCodeLib.dll
+C:\Users\Pat-Gamer\Source\Repos\MorseCode\MorseCodeLib\obj\Debug\MorseCodeLib.pdb

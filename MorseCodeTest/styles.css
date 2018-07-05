@@ -1,0 +1,43 @@
+﻿/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+#lblFileSelector{
+    font-size:xx-large;
+    font-weight:bold;
+    margin: 20px;
+    padding: 20px;
+}
+
+#form1 {
+    font-size:large;
+    margin: 30px;
+    padding: 30px;
+}
+
+.button input {
+    width: 500px;
+    padding: 20px;
+}
+
+#result {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 1000px;
+    min-width: 300px;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 2s;
+    display:inline-block;
+}
