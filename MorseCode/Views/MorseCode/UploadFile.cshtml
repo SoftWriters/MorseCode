@@ -1,0 +1,23 @@
+@model MorseCode.MorseCode.FileUpload
+
+@{
+    ViewData["Title"] = "Upload File";
+}
+
+<h2>Translate your Morse code file to plain text.</h2>
+
+<form asp-action="UploadFile" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="MorseCodeFile" for="MorseCode"></label>
+        <input asp-for="MorseCodeFile" class="form-control" id="MorseCode" />
+        <input type="submit" class="btn-group-sm" />
+    </div>
+</form>
+
+<div class="form-group">
+
+    <label asp-for="MorseCode"></label>
+<textarea asp-for="MorseCode" class="form-control"></textarea>
+
+</div>
+

@@ -1,0 +1,20 @@
+@model MorseCode.MorseCode.PlainText
+
+@{
+    ViewData["Title"] = "Create a Morse Code File";
+}
+
+<h2>Morsecode file builder:</h2>
+
+<form asp-controller="MorseCode" asp-action="CreateFile">
+    
+    <div class="form-group">
+        <label asp-for="Plaintext" class="form-control">Add Plain Text:</label><br />
+        <textarea class="form-control" asp-for="Plaintext"></textarea>
+    </div>
+
+    <div class="row">
+        <input type="submit" name="CreateFile" value="Create File" class="btn-default">
+    </div>
+
+</form>
