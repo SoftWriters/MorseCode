@@ -1,3 +1,45 @@
+# Morse Code
+
+By [Joshua Zinkovsky](mailto:joshua.zky@gmail.com)
+
+## Instructions
+
+1. Navigate to [repo](https://github.com/Josh961/MorseCode.git)
+2. Clone locally using
+   `git clone https://github.com/Josh961/MorseCode.git`
+3. Open `MorseCode.sln`
+4. Right click the `MorseCode` project -> properties
+5. Click debug and enter the path of the input file as an argument - application will not run otherwise
+6. `ctrl+f5` to run the application
+7. Application should display results and any errors in translating a character
+
+## Troubleshooting
+
+The application was cloned and tested on multiple machines and should work fine. However, if there
+are any problems, please see the following points:
+
+1. Application is running on .NET Core 2.2 and user must have the SDK installed
+2. If any build errors occur, try rebuilding the entire solution
+
+## Discussion
+
+I used the following technologies: C# and MSTest
+
+The solution is split up into three different projects. 
+1. `MorseCode` contains the driver program.
+2. `MorseCodeLibrary` contains the `ITranslator` interface to implement future possible methods of translation.
+3. `MorseCodeTest` contains the unit test file.
+
+## Requirements
+
+The program accepts a flat file as an input. It reads the file using the proper morse code characters, and outputs their
+translation in English.
+
+#### Tests
+
+Run tests within visual studio using shortcut `ctrl+r a`
+
+
 Morse Code
 ==========
 
