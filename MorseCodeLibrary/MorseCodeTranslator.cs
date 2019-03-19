@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
 namespace MorseCodeLibrary {
 
-    public class MorseCodeTranslator {
-        static IDictionary<string, string> dictionary = new Dictionary<string, string>() {
+    public class MorseCodeTranslator : ITranslator {
+        private IDictionary<string, string> dictionary = new Dictionary<string, string>() {
             { ".-", "a" }
             ,{ "-...", "b" }
             ,{ "-.-.", "c" }
@@ -51,7 +50,7 @@ namespace MorseCodeLibrary {
         /// </summary>
         /// <param name="inputFilePath">The file to translate</param>
         /// <returns>A string containing the translation</returns>
-        public static string Translate(string inputFilePath) {
+        public string Translate(string inputFilePath) {
             StringBuilder sb = new StringBuilder();
 
             var lines = File.ReadLines(inputFilePath);
@@ -65,15 +64,17 @@ namespace MorseCodeLibrary {
         }
         
         /// <summary>
-        /// Returns the translation of an individual line.
+        /// Returns the translation of an individual line of morse code.
         /// </summary>
         /// <param name="line">The line to translate</param>
         /// <returns>The translated line</returns>
-        public static string TranslateLine(string line) {
+        public string TranslateLine(string line) {
             StringBuilder sb = new StringBuilder();
-            string cleanedLine = line.Trim().Replace("||||", "||,||");
 
-            string[] letters = cleanedLine.Split("||");
+            // Replace two breaks in a row with a comma in between, signifying a space
+            string formattedLine = line.Trim().Replace("||||", "||,||");
+
+            string[] letters = formattedLine.Split("||");
             foreach (string letter in letters) {
                 string value = dictionary.ContainsKey(letter) ? dictionary[letter] : "!";
                 sb.Append(value);
