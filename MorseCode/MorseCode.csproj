@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MorseCodeToEnglishTranslator.cs" />
-    <Compile Include="OneWayTranslator.cs" />
+    <Compile Include="MorseCodeToEnglishConverter.cs" />
+    <Compile Include="OneWayConverter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
