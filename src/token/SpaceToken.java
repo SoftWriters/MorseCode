@@ -6,4 +6,9 @@ public class SpaceToken extends Token {
         return "||||";
     }
 
+    @Override
+    public String toString() {
+        return "SPACE";
+    }
+
 }

@@ -6,4 +6,9 @@ public class NewLineToken extends Token {
         return "\n";
     }
 
+    @Override
+    public String toString() {
+        return "NEW_LINE";
+    }
+
 }

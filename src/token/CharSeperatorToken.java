@@ -6,4 +6,9 @@ public class CharSeperatorToken extends Token {
         return "||";
     }
 
+    @Override
+    public String toString() {
+        return "CHAR_SEPERATOR";
+    }
+
 }

@@ -12,4 +12,9 @@ public class CharToken extends Token {
         return value;
     }
 
+    @Override
+    public String toString() {
+        return "'" + getValue() + "'";
+    }
+
 }
