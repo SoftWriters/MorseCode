@@ -22,11 +22,14 @@ namespace MorseCode
         public MorseCodeToEnglishConverter()
         {
             morseToCharDict = new Dictionary<string, char>();
+            //Get the resource file
             string[] lines = Resources.MorseToEnglish.Split(
                 new string[] { System.Environment.NewLine }, 
                 StringSplitOptions.None);
             foreach (string line in lines) {
                 string[] keyValue = line.Split(new char[] { ',' });
+                //The first value is the Morse
+                //The second is the character
                 morseToCharDict.Add(keyValue[0], keyValue[1][0]);
             }
         }
