@@ -11,11 +11,6 @@ public class MorseCodeParser {
             'n', 'm', 's', 'u', 'r', 'w', 'd', 'k', 'g', 'o', 'h', 'v', 'f',
             '\0', 'l', '\0', 'p', 'j', 'b', 'x', 'c', 'y', 'z', 'q', '\0' };
 
-    private static final int[][] TRANSITIONS = {
-            {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29}, // .
-            {2, 4, 6, 8, 10, 12, 14, 16, 29, 29, 22, 24, 26, 28, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29}, // -
-    };
-
     public MorseCodeParser(List<Token> tokenList) {
         this.tokenList = (LinkedList<Token>)tokenList;
     }
@@ -46,14 +41,17 @@ public class MorseCodeParser {
         for (char c : token.getValue().toCharArray()) {
             switch (c) {
                 case '.':
-                    currState = TRANSITIONS[0][currState];
+                    currState = currState * 2 + 1;
                     break;
                 case '-':
-                    currState = TRANSITIONS[1][currState];
+                    currState = (currState + 1) * 2;
                     break;
                 default:
                     // this has already been dealt with during tokenizing
             }
+        }
+        if (currState > 29) {
+            currState = 29;
         }
         char parsedChar = STATES_TO_CHARS[currState];
 

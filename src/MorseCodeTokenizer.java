@@ -11,9 +11,9 @@ public class MorseCodeTokenizer {
 
     private static class IllegalMorseCodeCharacterException extends Exception {
         public IllegalMorseCodeCharacterException(char offendingCharacter) {
-            super(offendingCharacter + "(" + (int)offendingCharacter + ")" +
-                    " is not a valid character. Only 4 characters are " +
-                    "excepted: '.', '-', '|', and '\\n'");
+            super("'" + offendingCharacter + "' " + "(" +
+                    (int)offendingCharacter + ") is not a valid character. " +
+                    "Only 4 characters are excepted: '.', '-', '|', and '\\n'");
         }
     }
 
