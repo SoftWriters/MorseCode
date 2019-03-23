@@ -15,9 +15,15 @@ public class MorseCodeInterpreter {
             throw new IllegalArgumentException(
                     "Morse Code file path cannot be null.");
         }
-        List<Token> tokenList = new MorseCodeTokenizer(path).tokenize();
-        String interpreted = new MorseCodeParser(tokenList).parse();
-        return interpreted;
+        List<Token> tokenList;
+        try {
+            tokenList = new MorseCodeTokenizer(path).tokenize();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+        String interpretedString = new MorseCodeParser(tokenList).parse();
+        return interpretedString;
     }
 
     public static void main(String[] args) {

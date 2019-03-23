@@ -17,70 +17,65 @@ public class MorseCodeTokenizer {
         }
     }
 
-    public MorseCodeTokenizer(String filePath) {
-        try {
-            reader = new BufferedReader(new FileReader(filePath));
-        }
-        catch (FileNotFoundException fnfe) {
-            fnfe.printStackTrace();
-        }
+    public MorseCodeTokenizer(String filePath) throws FileNotFoundException {
+        reader = new BufferedReader(new FileReader(filePath));
     }
 
-    public List<Token> tokenize() {
+    public List<Token> tokenize() throws
+            NoSuchElementException,
+            MorseCodeInterpreter.MorseCodeRuntimeException,
+            IllegalMorseCodeCharacterException,
+            IOException {
+
         LinkedList<Token> tokenList = new LinkedList<>();
         StringBuilder currChar = new StringBuilder();
         boolean lastCharWasPipe = false;
-        try {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                for (char c : line.toCharArray()) {
-                    //System.out.println(c + " '" + currChar.toString() + "' " + tokenList);
-                    switch (c) {
-                        case '.':
-                        case '-':
-                            currChar.append(c);
-                            break;
-                        case '|':
-                            if (lastCharWasPipe) {
-                                Token lastToken = tokenList.getLast(); // peak
-                                if (lastToken instanceof CharSeperatorToken) {
-                                    tokenList.removeLast();
-                                    tokenList.add(new SpaceToken());
-                                } else {
-                                    tokenList.add(new CharSeperatorToken());
-                                }
-                                lastCharWasPipe = false;
+        String line;
+        while ((line = reader.readLine()) != null) {
+            for (char c : line.toCharArray()) {
+                switch (c) {
+                    case '.':
+                    case '-':
+                        currChar.append(c);
+                        break;
+                    case '|':
+                        if (lastCharWasPipe) {
+                            if (tokenList.size() == 0) {
+                                throw new MorseCodeInterpreter.
+                                        MorseCodeRuntimeException(
+                                        "Line cannot start with '||'");
+                            } else if (tokenList.getLast() instanceof
+                                    CharSeperatorToken) {
+                                tokenList.removeLast();
+                                tokenList.add(new SpaceToken());
                             } else {
-                                if (currChar.length() != 0) {
-                                    tokenList.add(new CharToken(currChar.toString()));
-                                    currChar = new StringBuilder();
-                                }
-                                lastCharWasPipe = true;
+                                tokenList.add(new CharSeperatorToken());
                             }
-                            break;
-                        default:
-                            throw new IllegalMorseCodeCharacterException(c);
-                    }
+                            lastCharWasPipe = false;
+                        } else {
+                            if (currChar.length() != 0) {
+                                tokenList.add(new CharToken(
+                                        currChar.toString()));
+                                currChar = new StringBuilder();
+                            }
+                            lastCharWasPipe = true;
+                        }
+                        break;
+                    default:
+                        throw new IllegalMorseCodeCharacterException(c);
                 }
-                if (currChar.length() != 0) {
-                    tokenList.add(new CharToken(currChar.toString()));
-                    currChar = new StringBuilder();
-                }
-                tokenList.add(new NewLineToken());
             }
-            if (tokenList.size() > 0 &&
-                    !(tokenList.getLast() instanceof NewLineToken)) {
+            if (currChar.length() != 0) {
                 tokenList.add(new CharToken(currChar.toString()));
+                currChar = new StringBuilder();
             }
-        }
-        catch (NoSuchElementException nse) {
-            new MorseCodeInterpreter.MorseCodeRuntimeException(
-                    "Line cannot start with '||'").printStackTrace();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
+            tokenList.add(new NewLineToken());
         }
 
+        if (tokenList.size() > 0 &&
+                !(tokenList.getLast() instanceof NewLineToken)) {
+            tokenList.add(new CharToken(currChar.toString()));
+        }
         return tokenList;
     }
 }
