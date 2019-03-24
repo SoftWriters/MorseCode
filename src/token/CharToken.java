@@ -1,6 +1,11 @@
 package token;
 
-public class CharToken extends Token {
+/**
+ * @author Mark Nash
+ *
+ * Holds a string of '.' and/or '-'.
+ */
+public class CharToken implements Token {
 
     private String value;
 
@@ -8,13 +13,14 @@ public class CharToken extends Token {
         this.value = value;
     }
 
+    @Override
     public String getValue() {
         return value;
     }
 
     @Override
     public String toString() {
-        return "'" + getValue() + "'";
+        return "'" + value + "'";
     }
 
 }

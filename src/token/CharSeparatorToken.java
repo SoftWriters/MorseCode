@@ -1,7 +1,13 @@
 package token;
 
-public class CharSeperatorToken extends Token {
+/**
+ * @author Mark Nash
+ *
+ * Separates characters in a Morse Code file.
+ */
+public class CharSeparatorToken implements Token {
 
+    @Override
     public String getValue() {
         return "||";
     }

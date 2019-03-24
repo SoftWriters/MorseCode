@@ -1,9 +1,15 @@
 package token;
 
-public class SpaceToken extends Token {
+/**
+ * @author Mark Nash
+ *
+ * A token that represents a space between characters.
+ */
+public class SpaceToken implements Token {
 
+    @Override
     public String getValue() {
-        return "||||";
+        return " ";
     }
 
     @Override

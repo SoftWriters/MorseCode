@@ -1,7 +1,13 @@
 package token;
 
-public class NewLineToken extends Token {
+/**
+ * @author Mark Nash
+ *
+ * A newline token.
+ */
+public class NewLineToken implements Token {
 
+    @Override
     public String getValue() {
         return "\n";
     }
