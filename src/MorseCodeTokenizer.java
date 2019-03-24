@@ -46,7 +46,7 @@ public class MorseCodeTokenizer {
      *      was read without another '|' with it
      * @throws IllegalMorseCodeCharacterException An unaccepted character of the
      *      four characters was read
-     * @throws IOException Error closing the file or reading a line
+     * @throws IOException Error closing the file or reading a character
      */
     public List<Token> tokenize() throws
             MorseCodeInterpreter.MorseCodeRuntimeException,
@@ -55,48 +55,53 @@ public class MorseCodeTokenizer {
 
         LinkedList<Token> tokenList = new LinkedList<>();
         StringBuilder currChar = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            char[] charsOfLine = line.toCharArray();
-            for (int i = 0; i < charsOfLine.length; i++) {
-                char c = charsOfLine[i];
-                switch (c) {
-                    case '.':
-                    case '-':
-                        currChar.append(c);
-                        break;
-                    case '|':
-                        if (i++ == charsOfLine.length ||
-                                charsOfLine[i] != '|') {
-                            throw new MorseCodeInterpreter.
-                                    MorseCodeRuntimeException(
-                                    "'|' is not a valid token");
-                        }
-                        if (tokenList.size() > 0 && currChar.length() == 0 &&
-                                tokenList.getLast()
-                                instanceof CharSeparatorToken) {
-                            tokenList.removeLast();
-                            tokenList.add(new SpaceToken());
-                        } else {
+        int intChar;
+        char c;
+        while ((intChar = reader.read()) != -1) {
+            c = (char)intChar;
+            switch (c) {
+                case '.':
+                case '-':
+                    currChar.append(c);
+                    break;
+                case '|':
+                    intChar = reader.read();
+                    c = (char)intChar;
+                    if (intChar == -1 || c != '|') {
+                        throw new MorseCodeInterpreter.MorseCodeRuntimeException
+                                ("'|' is not a valid token");
+                    }
+                    if (tokenList.size() > 0 && currChar.length() == 0 &&
+                            tokenList.getLast() instanceof CharSeparatorToken) {
+                        tokenList.removeLast();
+                        tokenList.add(new SpaceToken());
+                    } else {
+                        if (currChar.length() != 0) {
                             tokenList.add(new CharToken(currChar.toString()));
                             currChar = new StringBuilder();
-                            tokenList.add(new CharSeparatorToken());
                         }
-                        break;
-                    default:
-                        throw new IllegalMorseCodeCharacterException(c);
-                }
+                        tokenList.add(new CharSeparatorToken());
+                    }
+                    break;
+                case '\r':
+                    break;
+                case '\n':
+                    if (currChar.length() != 0) {
+                        tokenList.add(new CharToken(currChar.toString()));
+                        currChar = new StringBuilder();
+                    }
+                    tokenList.add(new NewLineToken());
+                    break;
+                default:
+                    throw new IllegalMorseCodeCharacterException(c);
             }
-            if (currChar.length() != 0) {
-                tokenList.add(new CharToken(currChar.toString()));
-                currChar = new StringBuilder();
-            }
-            tokenList.add(new NewLineToken());
         }
-
-        tokenList.removeLast(); // the guaranteed extraneous newline
+        if (currChar.length() != 0) {
+            tokenList.add(new CharToken(currChar.toString()));
+        }
 
         reader.close();
         return tokenList;
     }
+
 }
