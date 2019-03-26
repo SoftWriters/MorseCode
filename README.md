@@ -1,6 +1,14 @@
 Morse Code
 ==========
 
+Instructions
+-----------
+1) Clone the repo.
+2) Compile .cpp files and create an executable file through the terminal app with command `g++ *.cpp -o morseCode.exe -Wall`.
+3) Files should successfully compile without errors or warnings.
+4) Run the executable with the input file as a command line argument through the teriminal app with command `./morseCode.exe sampleInput.txt`.
+5) Program should translate the morse code from 'sampleInput.txt' file and output the translation on the console of the terminal app.
+
 The Problem
 -----------
 Morse code is a way to encode messages in a series of long and short sounds or visual signals. During transmission, operators use pauses to split letters and words.
