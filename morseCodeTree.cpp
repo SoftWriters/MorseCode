@@ -90,7 +90,7 @@ void MorseCodeTree::deleteTree(MorseCodeNode* node){
     if (node == NULL) {
         return;
     }
-    for (int i = 0; i < node->children.size(); i++) {
+    for (unsigned int i = 0; i < node->children.size(); i++) {
         deleteTree(node->children[i]);
         delete node->children[i];
         node->children[i] = NULL;

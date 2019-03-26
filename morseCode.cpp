@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
     // the MorseCodeTree class is essentially a finite state automata where each state is a subsequence of a morse
     //  code, and all states reached through a valid sequence of a morse code for a letter are "accepting states"
     MorseCodeTree tree = MorseCodeTree();
-    for (int i = 0; i < SIZE; i++) {
+    for (unsigned int i = 0; i < SIZE; i++) {
         tree.addMorseCode(morseCodes[i], letters[i]);
     }
     

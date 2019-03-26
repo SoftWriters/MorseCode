@@ -3,7 +3,7 @@ Morse Code
 
 Implementation Details
 -----------
-The morseCodeTree class is a replica of a Deterministic Finite Automaton (DFA). Each node in the morseCodeTree (or state, in DFA terms), contains a letter and transition(s) to other nodes.
+The morseCodeTree class is a replica of a Deterministic Finite Automaton (DFA). The root is the starting state, and each node in the morseCodeTree (or state, in DFA terms), contains a letter and transition(s) to other nodes.
 
 Starting from the root of the morseCodeTree, for a given morse code sequence (e.g.: ..-), transition to future states based on current character (. or -) while reading characters from left to right. Once the full morse code sequence is read, if the morse code is a valid sequence that can be translated to a letter, the current node or state will contain the letter (e.g.: u) that corresponds to that morse code sequence. Invalid morse code sequences will lead to a state that contains the null character '\0'.
 
