@@ -85,6 +85,7 @@ void MorseCodeTree::addMorseCode(MorseCodeNode* node, std::string& morseCode, ch
     addMorseCode(newChild, morseCode, letter, index+1);
 }
 
+// private recursive delete method called by destructor
 void MorseCodeTree::deleteTree(MorseCodeNode* node){
     if (node == NULL) {
         return;

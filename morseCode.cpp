@@ -25,21 +25,21 @@ int main(int argc, char* argv[]) {
         std::cout << "Could not open the morse code file: " << argv[1] << ".\n";
         return 1;
     }
-    // hard code array of all morse codes and all alphanumeric characters
+    // hard code array of all morse codes and all english alphabet letters
+    // 'morseCodes' and 'letters' correspond so that morseCodes[i] is the morse code for the letter in letters[i]
     int const SIZE = 26;
     std::string morseCodes[SIZE] = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.." };
     char letters[SIZE] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
     // create MorseCodeTree
-    // the MorseCodeTree class is essentially a finite state automata where each state
-    //  is a subsequence of a morse code, and all states reached through a valid
-    //   sequence of a morse code for a letter are "accepting states"
+    // the MorseCodeTree class is essentially a finite state automata where each state is a subsequence of a morse
+    //  code, and all states reached through a valid sequence of a morse code for a letter are "accepting states"
     MorseCodeTree tree = MorseCodeTree();
     for (int i = 0; i < SIZE; i++) {
         tree.addMorseCode(morseCodes[i], letters[i]);
     }
     
-    // break is b/t chars or letters; prev_break is the start index of the current morse code
-    //  sequence, next_break is the end index of the current morse code (index+1), where
+    // break is b/t chars or letters; prev_break is the start index of the current morse code subsequence for a letter;
+    //  next_break is the end index of the current morse code subsequence (end_index+1), where
     //   the || begins
     size_t prev_break, next_break;
     std::string morseCodeSeq, morseCodeSubSeq;
@@ -47,7 +47,9 @@ int main(int argc, char* argv[]) {
         prev_break = 0;
         // while a break exists in the morse code subsequence that I have not translated yet..
         while ((next_break = morseCodeSeq.find("||", prev_break)) != std::string::npos) {
+            // get the morse code subsequence for a letter
             morseCodeSubSeq = morseCodeSeq.substr(prev_break, next_break-prev_break);
+            // translate that morse code subsequence and print it out
             std::cout << tree.getLetterFromCode(morseCodeSubSeq);
             // skip over the "||"
             prev_break = next_break + 2;
@@ -64,7 +66,7 @@ int main(int argc, char* argv[]) {
                 prev_break = next_break;
             }
         }
-        // last morse code sub sequence, which does not precede a break
+        // last morse code subsequence, which does not precede a break
         morseCodeSubSeq = morseCodeSeq.substr(prev_break, morseCodeSeq.size()-prev_break);
         std::cout << tree.getLetterFromCode(morseCodeSubSeq) << std::endl;
     }
