@@ -5,9 +5,9 @@
 //  Created by Paul Lim on 3/23/19.
 //
 
-#include "morseCodeTree.h"
 #include <vector>
 #include <string>
+#include "morseCodeTree.h"
 
 // MorseCodeTree implementation
 // public
@@ -25,6 +25,7 @@ MorseCodeTree::~MorseCodeTree() {
 //  that matches with the morseCode parameter
 char MorseCodeTree::getLetterFromCode(std::string& morseCode) {
     if (root == NULL) {
+        // root should never be null for an object, but check nonetheless
         return '\0';
     }
     return getLetterFromCode(root, morseCode, 0);
@@ -32,22 +33,25 @@ char MorseCodeTree::getLetterFromCode(std::string& morseCode) {
 
 void MorseCodeTree::addMorseCode(std::string& morseCode, char letter) {
     if (root == NULL) {
+        // root should never be null for an object, but check nonetheless
         return;
     }
     addMorseCode(root, morseCode, letter, 0);
 }
 
 // private
-char MorseCodeTree::getLetterFromCode(MorseCodeNode* node, std::string& morseCode, int index) {
+char MorseCodeTree::getLetterFromCode(MorseCodeNode* node, std::string& morseCode, unsigned int index) {
     if (index == morseCode.size()) {
         // 'node' is where the 'letter' should be
         // in terms of finite state automata, 'node' should be an accepting state for morseCode
         return node->letter;
     }
     
-    char subMorseCode = (char) morseCode.substr(index,1)[0];
+    char subMorseCode = (char) morseCode[index];
     for (std::vector<MorseCodeNode*>::iterator child = node->children.begin();
          child != node->children.end(); child++) {
+        // from the currently seen morseCode subsequence "state", check if there is a transition for the
+        //  next morseCode character to the next state
         if ((*child)->subMorseCode == subMorseCode) {
             return getLetterFromCode(*child, morseCode, index+1);
         }
@@ -55,24 +59,26 @@ char MorseCodeTree::getLetterFromCode(MorseCodeNode* node, std::string& morseCod
     return '\0';
 }
 
-void MorseCodeTree::addMorseCode(MorseCodeNode* node, std::string& morseCode, char letter, int index) {
+void MorseCodeTree::addMorseCode(MorseCodeNode* node, std::string& morseCode, char letter, unsigned int index) {
     if (index == morseCode.size()) {
         // 'node' is where the 'letter' should be
         // in terms of finite state automata, 'node' should be an accepting state for morseCode
         node->setLetter(letter);
         return;
     }
-    char subMorseCode = (char) morseCode.substr(index,1)[0];
+    char subMorseCode = (char) morseCode[index];
     for (std::vector<MorseCodeNode*>::iterator child = node->children.begin();
          child != node->children.end(); child++) {
+        // from the currently seen morseCode subsequence "state", check if there is a transition for the
+        //  next morseCode character to the next state
         if ((*child)->subMorseCode == subMorseCode) {
             addMorseCode(*child, morseCode, letter, index+1);
             return;
         }
     }
-    // 'node' does not have a child with subMorseCode == morseCode.substr(index,1).
-    //  In other words, the 'morseCode' that needs to be added is an extension of an already
-    //   known morse code subsequence
+    // 'node' does not have a transition with 'subMorseCode' as the transition character
+    // In other words, the 'morseCode' that needs to be added is a new extension of a subsequence of an already
+    //  known morse code, and this extension was never seen before
     MorseCodeNode* newChild = new MorseCodeNode(subMorseCode, '\0');
     node->children.push_back(newChild);
     // recurse down the new child node
@@ -101,10 +107,6 @@ MorseCodeNode::MorseCodeNode(char subMorseCode, char letter) {
     this->subMorseCode = subMorseCode;
     this->letter = letter;
     this->children = std::vector<MorseCodeNode*>();
-}
-
-MorseCodeNode::~MorseCodeNode() {
-    
 }
 
 void MorseCodeNode::addChild(MorseCodeNode* child) {

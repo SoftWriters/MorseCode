@@ -21,9 +21,10 @@ public:
     // Modifiers
     void addMorseCode(std::string& morseCode, char letter);
 private:
-    char getLetterFromCode(MorseCodeNode* node, std::string& morseCode, int index);
-    void addMorseCode(MorseCodeNode* node, std::string& morseCode, char letter, int index);
+    char getLetterFromCode(MorseCodeNode* node, std::string& morseCode, unsigned int index);
+    void addMorseCode(MorseCodeNode* node, std::string& morseCode, char letter, unsigned int index);
     void deleteTree(MorseCodeNode* node);
+    // member fields
     MorseCodeNode* root;
 };
 
@@ -32,7 +33,6 @@ class MorseCodeNode {
 public:
     MorseCodeNode();
     MorseCodeNode(char subMorseCode, char letter);
-    ~MorseCodeNode();
     // Accessors
     char getLetter();
     // Modifiers

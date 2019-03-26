@@ -18,6 +18,8 @@ int main(int argc, char* argv[]) {
     }
     
     // read morse code file
+    // syntax of the lines in morseCodeFile are assumed to be "correct", and limited to
+    //  only the characters '.', '-', and "||" as stated in the README.md
     std::ifstream morseCodeFile(argv[1]);
     if (!morseCodeFile){
         std::cout << "Could not open the morse code file: " << argv[1] << ".\n";
@@ -36,29 +38,33 @@ int main(int argc, char* argv[]) {
         tree.addMorseCode(morseCodes[i], letters[i]);
     }
     
-    // regular break is b/t chars; spaceBreak is b/t words
-    size_t prev_break, next_break, i_spaceBreak;
+    // break is b/t chars or letters; prev_break is the start index of the current morse code
+    //  sequence, next_break is the end index of the current morse code (index+1), where
+    //   the || begins
+    size_t prev_break, next_break;
     std::string morseCodeSeq, morseCodeSubSeq;
     while (morseCodeFile >> morseCodeSeq) {
         prev_break = 0;
-        i_spaceBreak = morseCodeSeq.find("||||");
+        // while a break exists in the morse code subsequence that I have not translated yet..
         while ((next_break = morseCodeSeq.find("||", prev_break)) != std::string::npos) {
-            if (next_break == i_spaceBreak) {
-                // space
-                // print out the word before the space
-                morseCodeSubSeq = morseCodeSeq.substr(prev_break, next_break-prev_break);
-                std::cout << tree.getLetterFromCode(morseCodeSubSeq);
-                // print the space
-                std::cout<< " ";
-                i_spaceBreak = morseCodeSeq.find("||||", i_spaceBreak+4);
-                prev_break = next_break + 4;
-                continue;
-            }
             morseCodeSubSeq = morseCodeSeq.substr(prev_break, next_break-prev_break);
             std::cout << tree.getLetterFromCode(morseCodeSubSeq);
+            // skip over the "||"
             prev_break = next_break + 2;
+            
+            if (morseCodeSeq[next_break+2] == '|') {
+                // there are subsequent breaks "||"
+                // each subsequent break results in a space (eg: |||| -> 2 spaces,
+                //  |||||| -> 3 spaces); assumed that groups of subsequent breaks only
+                //   occur in sizes of even numbers
+                while (morseCodeSeq[next_break+2] == '|') {
+                    next_break += 2;
+                    std::cout<< " ";
+                }
+                prev_break = next_break;
+            }
         }
-        // last morse code sub sequence
+        // last morse code sub sequence, which does not precede a break
         morseCodeSubSeq = morseCodeSeq.substr(prev_break, morseCodeSeq.size()-prev_break);
         std::cout << tree.getLetterFromCode(morseCodeSubSeq) << std::endl;
     }
