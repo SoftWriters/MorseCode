@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
  * Demo to demonstrate use of MorseCodeTranslator package.
  * Compile and run this file to see the translator in action.
  */
-public class MorseCodeReaderDemo {
+public class MorseCodeTranslatorDemo {
     public static void main(String[] args) {
 
         File outputDir; // output file directory
