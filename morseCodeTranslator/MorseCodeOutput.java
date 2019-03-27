@@ -18,6 +18,12 @@ class MorseCodeOutput {
      * Public Functions 
      */
 
+    /**
+     * MorseCodeOutput constructor.
+     * @param outputFileName name of file to output to
+     * @throws OutputFileIOException if an IOException occurs while
+     *         trying to create the output file
+     */
     public MorseCodeOutput(String outputFileName) throws OutputFileIOException {
         // initialize the file writer
         try {
@@ -29,12 +35,13 @@ class MorseCodeOutput {
     }
 
     /**
-     * Outputs the given character to file and prints to console.
+     * Outputs a given character to file.
      * @param outputChar character to output
+     * @throws OutputFileIOException if an IOException occurs
+     *         while writing to the output file 
      */
     public void outputCharacter(char outputChar) throws OutputFileIOException {
         String outCharacter = Character.toString(outputChar);
-        System.out.print(outCharacter);
         try {
             this.fileWriter.write(outCharacter);
         }
@@ -45,6 +52,8 @@ class MorseCodeOutput {
 
     /**
      * Call this function to finish writing to the output file.
+     * @throws OutputFileIOException if an IOException occurs
+     *         when trying to close the output file 
      */
     public void finishWriting() throws OutputFileIOException {
         // close the fileWriter

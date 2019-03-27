@@ -1,5 +1,9 @@
 package morseCodeTranslator;
 
+/**
+ * Exception raised when an IOException occurs while reading a morse
+ * code input file.
+ */
 public class InputFileIOException extends MorseCodeTranslatorException {
    
     public InputFileIOException() {

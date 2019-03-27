@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * Class for reading in a morse code input file.
+ * Class for reading a morse code input file.
  */
 class MorseCodeInput {
 
@@ -51,7 +51,7 @@ class MorseCodeInput {
             // read in each line of input file
             String line = this.fileReader.readLine();
             while (line != null) {
-                // split line into morse code characters using delimiter
+                // split line into morse code character strings using delimiter
                 String[] lineCharacters = line.split(this.inputFileDelimiter);
                 morseCodeCharacters = this.concatArraysAndNewline(morseCodeCharacters, lineCharacters);
                 line = this.fileReader.readLine();
@@ -86,14 +86,4 @@ class MorseCodeInput {
 
         return resultArray;
     }
-
-    /**
-     * Removes first element of the given string array and returns it.
-     */
-    // private String[] removeFirstArrayElement(String[] sArray) {
-    //     int aLength = sArray.length - 1;
-    //     String[] resultArray = new String[aLength];
-    //     System.arraycopy(sArray, 1, resultArray, 0, aLength);
-    //     return resultArray;
-    // }
 }

@@ -1,5 +1,8 @@
 package morseCodeTranslator;
 
+/**
+ * Exception raised when the input morse code file is not found.
+ */
 public class InputFileNotFoundException extends MorseCodeTranslatorException {
    
     public InputFileNotFoundException() {

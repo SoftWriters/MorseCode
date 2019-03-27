@@ -1,5 +1,11 @@
 package morseCodeTranslator;
 
+// Using custom exceptions here to give user of MorseCodeTranslator useful
+// exceptions that indicate any specific issues that occur during translation.
+
+/**
+ * Exception representing any exception specific to the MorseCodeTranslator
+ */
 public abstract class MorseCodeTranslatorException extends Exception {
 
     public MorseCodeTranslatorException() {
