@@ -1,0 +1,27 @@
+﻿@model MorseCodeModel
+
+@{
+    ViewData["Title"] = "Translated Text";
+}
+
+<h2>Morse to English Translation</h2>
+
+
+<!--display translation-->
+<div>
+
+    @{
+
+            <h5 style="font-weight:bold;">Translated Text:</h5>
+
+
+
+            foreach (string item in Model.ConvertedText)
+            {
+                <p>@item</p>
+            }
+
+    }
+
+
+</div>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MorseCodeTranslatorTests\obj\Debug\netcoreapp2.1\MorseCodeTranslatorTests.assets.cache" />
+    <None Remove="MorseCodeTranslatorTests\obj\Debug\netcoreapp2.1\MorseCodeTranslatorTests.csprojAssemblyReference.cache" />
+    <None Remove="MorseCodeTranslatorTests\obj\MorseCodeTranslatorTests.csproj.nuget.dgspec.json" />
+    <None Remove="MorseCodeTranslatorTests\obj\MorseCodeTranslatorTests.csproj.nuget.g.props" />
+    <None Remove="MorseCodeTranslatorTests\obj\MorseCodeTranslatorTests.csproj.nuget.g.targets" />
+    <None Remove="MorseCodeTranslatorTests\obj\project.assets.json" />
+    <None Remove="MorseCodeTranslatorTests\obj\MorseCodeTranslatorTests.csproj.nuget.cache" />
+  </ItemGroup>
+</Project>

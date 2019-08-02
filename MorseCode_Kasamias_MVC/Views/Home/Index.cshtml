@@ -1,0 +1,35 @@
+﻿@model MorseCodeModel
+
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+
+
+<h2>Morse Code Translator</h2>
+
+<h4>Please attach a file to be translated from Morse Code to English Text.</h4>
+
+
+<form asp-controller="Home" asp-action="Index" method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file"></label>
+        <input type="file" name="file" id="file" />
+    </div>
+
+
+
+    <div style="margin-top: 30px;">
+        <input type="submit" value="Upload" />
+    </div>
+
+</form>
+
+
+
+
+
+
+
+
