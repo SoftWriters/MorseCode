@@ -3,9 +3,9 @@ Morse Code
 
 Implementation Details
 -----------
-The morseCodeTree class is implemented using the Trie data structure, which is essentially a Deterministic Finite Automaton (DFA). The root is the starting state, and each node in the morseCodeTree (or state, in DFA terms), contains a letter and transition(s) to other nodes.
+The morseCodeTree class is implemented using the Trie data structure, which functions identically to a Deterministic Finite Automaton (DFA). The root of the tree is the starting state, and each node in the morseCodeTree (or state, in DFA terms), contains a letter and transition(s) to other nodes.
 
-When a given morse code sequence (e.g.: ..-), the morseCodeTree will start from the root and transition to future states based on the current character (. or -) while reading each character in the sequence from left to right. Once the full morse code sequence is read, if the morse code is a valid sequence that can be translated to a letter, the current node or state will contain the letter (e.g.: u) that corresponds to that morse code sequence. Invalid morse code sequences will lead to a state that contains the null character '\0'.
+When given morse code (e.g.: ..-) to translate, the morseCodeTree will start from its root and recursively traverse through the tree based on the current character (. or -) it is reading while reading each character in the code from left to right. Once the morse code is read, if the morse code is a valid sequence of characters that can be translated to a letter, the current node or state will contain the letter (e.g.: u) that corresponds to the given morse code. Invalid morse codes will lead to a state that contains the null character '\0'.
 
 The morseCodeTree instance is created at the beginning of program execution, and all valid morse code sequences are added to the tree through a hard-coded array of size 26 that contains the morse code sequences for all 26 letters in the English alphabet.
 
